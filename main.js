@@ -25,22 +25,37 @@ let charactersAll = []
 
 let numbersAndLetterAndCharac
 
+let amount = 0
+
 if(msgNumber == 'sim') {
     numbersAll = all.concat(numbers)
+    password.push(numbers[randomNumberInterval(0, numbers.length)])
+    amount++
 } 
 
 if (msgLetter == 'sim') {
     lettersAll = all.concat(letter)
+    password.push(letter[randomNumberInterval(0, letter.length)])
+    amount++
+
 } 
 
 if (msgCharac == 'sim') {
     charactersAll = all.concat(charac)
+    password.push(charac[randomNumberInterval(0, charac.length)])
+    amount++
+
 }
 
-numbersAndLetterAndCharac = numbersAll.concat(lettersAll).concat(charactersAll)
+function creatPassword() {
+    numbersAndLetterAndCharac = numbersAll.concat(lettersAll).concat(charactersAll)
 
-for(let i = 0; i < Number(msgDigits); i++) {
-    password.push(numbersAndLetterAndCharac[randomNumberInterval(0, numbersAndLetterAndCharac.length)])
+    for(let i = 0; i < (Number(msgDigits) - amount); i++) {
+        password.push(numbersAndLetterAndCharac[randomNumberInterval(0, numbersAndLetterAndCharac.length)])
+    }
+
+    return password.join('')
 }
 
-alert(`Senha: ${password.join('')}`)
+alert(`Sua senha: ${creatPassword()}`)
+
