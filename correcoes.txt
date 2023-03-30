@@ -1,0 +1,8 @@
+O que preciso consertar ou rever?
+
+    Bug na geração de senha com o tamanho 10
+    design
+    formatar o javascript - esta pessimo, eu sei 
+    header das paginas voltar para a pagina principal
+    backend
+    estrutura da pagina, ter clareza sobre cada detalhe dela, sem deixar confusa para o usuario

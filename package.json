@@ -1,0 +1,21 @@
+{
+  "name": "codegenerator---git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/napolifabrizio/PasswordGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/napolifabrizio/PasswordGen/issues"
+  },
+  "homepage": "https://github.com/napolifabrizio/PasswordGen#readme"
+}

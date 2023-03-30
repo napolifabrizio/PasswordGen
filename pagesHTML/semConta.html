@@ -2,10 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/semConta.css">
 
     <link rel="icon" type="image/png" href="./icons/icons8-desbloquear-30.png"/>
     <title>Pass</title>
@@ -20,28 +18,36 @@
     </header>
     <main>
         <section class="container">
-            <h1 class="titulo">Seja bem vindo</h1>
+            <h1 class="titulo">Gere suas senhas</h1>
             <section>
-                <div>
-                    <button class="but-NTC but">
-                        <a href="./pagesHTML/semConta.html">Gerar senhas sem conta</a>
-                    </button>
-                </div>
-                <div>
-                    <button class="but-FUC but">
-                        <a>Fazer uma conta</a>
-                    </button>
-                </div>
-                <div>
-                    <button class="but-Entrar but">
-                        <a>Entrar</a>
-                    </button>
-                </div>
+                <section>
+                    <button class="but-NTC but" data-botaoGerar>Gerar senha</button>
+                </section>
+                <section class="opcoes">
+                    <section class="opcoes-1">
+                        <label for="Letras" class="labels letras" >Letras</label>
+                        <input type="checkbox" value="Letras" id="Letras" data-letras>
+    
+                        <label for="Numeros" class="labels numeros">Números</label>
+                        <input type="checkbox" value="Numeros" id="Numeros" data-numeros>
+                    </section>
+                    <section class="opcoes-2">
+                        <label for="Especiais" class="labels letrasEspec">Caracteres Especiais</label>
+                        <input type="checkbox" value="Caracteres Especiais" id="Especiais" data-especiais>
+    
+                        <input class="tamanhoSenha" type="text" data-tamanhoSenha>
+                    </section>
+
+                </section>
+                <section class="campoSenhaGerada">
+                    <h2 class="senhaGerada" data-senhaGerada>SENHA</h2>
+                </section>
             </section>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
