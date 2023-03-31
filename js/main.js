@@ -1,33 +1,9 @@
-const charac = ["@", "#", "$", "%", "&", "*"];
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const letter = [
-  "q",
-  "w",
-  "e",
-  "r",
-  "t",
-  "y",
-  "u",
-  "i",
-  "o",
-  "p",
-  "a",
-  "s",
-  "d",
-  "f",
-  "g",
-  "h",
-  "j",
-  "k",
-  "l",
-  "z",
-  "x",
-  "c",
-  "v",
-  "b",
-  "n",
-  "n",
-];
+import creatPassword from "./geradorSenhas.js";
+import digitosSenha from "./arraysDigitos.js";
+
+function randomNumberInterval(a, b) {
+  return Math.floor(Math.random() * (b - a + 1)) + a;
+}
 
 const botaoGerar = document.querySelector("[data-botaoGerar]");
 
@@ -38,63 +14,28 @@ const tamanhoSenha = document.querySelector("[data-tamanhoSenha]");
 
 const senhaGerada = document.querySelector("[data-senhaGerada]");
 
-const all = [];
-let password = [];
+botaoGerar.addEventListener("click", () => {
+  let all = [];
+  let amount = 0;
+  let password = [];
 
-let numbersAll = [];
-let lettersAll = [];
-let charactersAll = [];
-
-let numbersAndLetterAndCharac = [];
-
-let amount = 0;
-
-function randomNumberInterval(a, b) {
-    return Math.floor(Math.random() * (b - a + 1)) + a;
-}
-
-function creatPassword() {
-    numbersAndLetterAndCharac = numbersAll
-    .concat(lettersAll)
-    .concat(charactersAll);
-    
-  for (let i = 0; i < Number(tamanhoSenha.value) - amount; i++) {
-    password.push(
-      numbersAndLetterAndCharac[
-        randomNumberInterval(0, numbersAndLetterAndCharac.length)
-      ]
-    );
+  if (checkboxNumeros.checked) {
+    all.push(...digitosSenha.numbers);
+    password.push(digitosSenha.numbers[randomNumberInterval(0, digitosSenha.numbers.length - 1)]);
+    amount++;
   }
 
-  
-  return password.join("");
-}
+  if (checkboxLetras.checked) {
+    all.push(...digitosSenha.letter);
+    password.push(digitosSenha.letter[randomNumberInterval(0, digitosSenha.letter.length - 1)]);
+    amount++;
+  }
 
-botaoGerar.addEventListener("click", () => {
+  if (checkboxEspeciais.checked) {
+    all.push(...digitosSenha.charac);
+    password.push(digitosSenha.charac[randomNumberInterval(0, digitosSenha.charac.length - 1)]);
+    amount++;
+  }
 
-    amount = 0;
-    password = []
-
-    if (checkboxNumeros.checked) {
-      numbersAll = all.concat(numbers);
-      password.push(numbers[randomNumberInterval(0, numbers.length - 1)]);
-      amount++;
-    }
-    
-    if (checkboxLetras.checked) {
-      lettersAll = all.concat(letter);
-      password.push(letter[randomNumberInterval(0, letter.length - 1)]);
-      amount++;
-    }
-    
-    if (checkboxEspeciais.checked) {
-      charactersAll = all.concat(charac);
-      password.push(charac[randomNumberInterval(0, charac.length - 1)]);
-      amount++;
-    }
-
-  console.log(
-   amount, numbersAndLetterAndCharac
-  );
-  return (senhaGerada.innerHTML = `<h2 class="senhaGerada" data-senhaGerada>${creatPassword()}</h2>`);
+  return (senhaGerada.innerHTML = `<h2 class="senhaGerada" data-senhaGerada>${creatPassword(tamanhoSenha.value, all, password, amount)}</h2>`);
 });
