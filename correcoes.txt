@@ -1,8 +1,19 @@
-O que preciso consertar ou rever?
+O que preciso consertar ou rever? - 1
 
-    Bug na geração de senha com o tamanho 10
+    Bug na geração de senha com o tamanho 10 ----- RESOLVIDO
     design
-    formatar o javascript - esta pessimo, eu sei 
+    formatar o javascript - esta pessimo, eu sei ----- PRIMEIRA REFATORACAO FEITA
     header das paginas voltar para a pagina principal
     backend
     estrutura da pagina, ter clareza sobre cada detalhe dela, sem deixar confusa para o usuario
+
+O que preciso consertar ou rever? - 2
+
+    design
+    header das paginas voltar para a pagina principal
+    backend
+    estrutura da pagina, ter clareza sobre cada detalhe dela, sem deixar confusa para o usuario
+
+    
+
+

@@ -15,9 +15,9 @@ const tamanhoSenha = document.querySelector("[data-tamanhoSenha]");
 const senhaGerada = document.querySelector("[data-senhaGerada]");
 
 botaoGerar.addEventListener("click", () => {
-  let all = [];
   let amount = 0;
-  let password = [];
+  const all = [];
+  const password = [];
 
   if (checkboxNumeros.checked) {
     all.push(...digitosSenha.numbers);
