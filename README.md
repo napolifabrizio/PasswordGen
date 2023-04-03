@@ -1,4 +1,4 @@
-<h1 align="center"> PasswordGen </h1>
+<h1 align="center"> Password</h1>
 
 ![Badge License](https://img.shields.io/badge/license-napolifabrizio-green)
 ![Badge Desenvolvimento](https://img.shields.io/badge/status-desenvolvimento-yellow)
