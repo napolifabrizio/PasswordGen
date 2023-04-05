@@ -21,7 +21,6 @@ header h1{
     left: 10px;
 
     font-size: 1.7em;;
-    
 }
 
 .container{
@@ -60,15 +59,25 @@ header h1{
 
 .but-NTC{
     background-color: rgb(17, 17, 110);
+    text-decoration: none;
+    color: white;
 }
 
-a:-webkit-any-link {
-    cursor: pointer;
+a{
     text-decoration: none;
+    cursor: pointer;
+
 }
 
 .but-FUC{
     background-color: rgb(172, 15, 59);
+}
+
+.input{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 273px;
+    border-radius: 5px;
 }
 
 .but-Entrar{
