@@ -39,6 +39,23 @@ header h1{
     text-align: center;
 }
 
+.opcoes{
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 50px;
+}
+
+.head-container p{
+    display: inline;
+    background-color: rgb(118, 118, 206);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: small;
+    color: white;
+}
+
 .head-container h3{
     display: inline-block;
     margin-left: 10px;
@@ -47,6 +64,13 @@ header h1{
 .head-container img{
     position: relative;
     top:15px;
+}
+
+.senhas{
+    list-style: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .license{
