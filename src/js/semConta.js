@@ -1,9 +1,5 @@
-import creatPassword from "./geradorSenhas.js";
+import {creatPassword, randomNumberInterval} from "./geradorSenhas.js";
 import digitosSenha from "./arraysDigitos.js";
-
-function randomNumberInterval(a, b) {
-  return Math.floor(Math.random() * (b - a + 1)) + a;
-}
 
 const botaoGerar = document.querySelector("[data-botaoGerar]");
 

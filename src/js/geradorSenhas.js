@@ -12,6 +12,6 @@ function creatPassword(senhaTamanho, digitosSenha, senhaFinal, contador) {
   return senhaFinal.join("");
 }
 
-export default creatPassword;
+export {creatPassword, randomNumberInterval};
 
 

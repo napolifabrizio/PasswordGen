@@ -29,27 +29,32 @@
                 <section class="container-senha">
                     <h1 class="titulo">Password</h1>
                     <section>
-                        <section>
-                            <button class="but-NTC but" data-botaoGerar>Gerar senha</button>
+                        <section class="header-senhas">
+                            <label class="labels nomeSenha mg-bottom" data-nome-senha>Nome da senha</label>
+                            <br>
+                            <br>
+                            <input class="input-NomeSenha mg-bottom" type="text" placeholder="Ex: Senha do Facebook">
+                            <button class="but-NTC but" data-botaoGerar2>Gerar senha</button>
                         </section>
-                        <section class="opcoes-senha">
+                        <section class="opcoes-senha mg-bottom">
                             <section class="opcoes-1">
                                 <label for="Letras" class="labels letras" >Letras</label>
-                                <input type="checkbox" value="Letras" id="Letras" data-letras>
+                                <input type="checkbox" value="Letras" id="Letras" data-letras2>
                                                 
                                 <label for="Numeros" class="labels numeros">Números</label>
-                                <input type="checkbox" value="Numeros" id="Numeros" data-numeros>
+                                <input type="checkbox" value="Numeros" id="Numeros" data-numeros2>
                             </section>
                             <section class="opcoes-2">
                                 <label for="Especiais" class="labels letrasEspec">Caracteres Especiais</label>
-                                <input type="checkbox" value="Caracteres Especiais" id="Especiais" data-especiais>
+                                <input type="checkbox" value="Caracteres Especiais" id="Especiais" data-especiais2>
                 
-                                <input class="tamanhoSenha" type="text" data-tamanhoSenha>
+                                <input class="tamanhoSenha" type="text" data-tamanhoSenha2>
                             </section>
         
                         </section>
-                        <section class="campoSenhaGerada">
-                            <h2 class="senhaGerada" data-senhaGerada>SENHA</h2>
+                        <section class="campoSenhaGerada mg-bottom">
+                            <h2 class="senhaGerada" data-senhaGerada2>SENHA</h2>
+                            <input type="submit" value="Salvar senha" class="but-salvar but" data-salvarSenha>
                         </section>
                     </section>
             </section>
@@ -58,5 +63,6 @@
     <footer>
         <a class="license" href="https://icons8.com/icon/47881/um-círculo-de-usuário">Um círculo de usuário icon by Icons8</a>
     </footer>
+    <script src="../js/comConta.js" type="module"></script>
 </body>
 </html>
