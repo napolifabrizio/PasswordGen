@@ -34,7 +34,7 @@ MongoDB<br>
 
 <h2><b>Observações</b></h2>
 
-Esse projeto ainda está em seu protótipo, falta muita coisa ainda, como: refatoração, design, backend, banco de dados etc. Porém ja estou postando para ter um histórico da evolução do projeto e do meu aprendizado.
+Esse projeto ainda está em seu protótipo, falta muita coisa ainda, como: refatoração, design, backend, banco de dados etc. Porém ja estou postando para ter um histórico da evolução do projeto e do meu aprendizado. Para ficar 100% pronto deve demorar um pouco, preciso aprender muita coisa ainda para deixar do jeito que quero. Meu foco é backend, então questões como design ou organização no código de arquivos do frontend não são minha prioridade, mãs não serão ignorados, porém meu objetivo é um backend bem estruturado de acordo com meus conhecimentos e ideias para o projeto.
 
 
 
