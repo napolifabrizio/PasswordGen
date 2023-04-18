@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/napolifabrizio/PasswordGen/issues"
   },
-  "homepage": "https://github.com/napolifabrizio/PasswordGen#readme"
+  "homepage": "https://github.com/napolifabrizio/PasswordGen#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
