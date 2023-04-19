@@ -1,3 +1,2 @@
-Essa pasta config existe para conectar o banco de dados do MongoDB á esta aplicação, porem a 
-pasta esta escondida por questões de segurança. Mas no arquivo "app.js" é possível ve-la sendo
+Essa pasta config existe para conectar o banco de dados do MongoDB á esta aplicação, porem o arquivo que faz essa conexão esta escondido por questões de segurança. Mas no arquivo "app.js" é possível ve-la sendo
 chamada no import.
